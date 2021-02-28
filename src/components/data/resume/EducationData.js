@@ -5,7 +5,7 @@ export const EducationData= [
         Degree:'master of science, major in computer science',
         GPA:'GPA:3.92/4.0',
         Date:'Sep. 2016 -  Nov. 2018',
-        Description:'Graduated with Master of Computer Science degree with distinction honor.',
+        Descriptions:['Graduated with Master of Computer Science degree with distinction honor.'],
     },
     {
         Institution:'ZheJiang University of Finance and Economics, Hangzhou, China',
@@ -13,13 +13,13 @@ export const EducationData= [
         Degree:'bachelor of science, major in information and computing science/ bachelor of economics, major in finance',
         GPA:'',
         Date:'Sep. 2010 -  Jun. 2014',
-        Description:'',
+        Descriptions:[],
     },
     // {
     //     Institution:,
     //     Degree:,
     //     GPA:,
     //     Date:,
-    //     Description:,
+    //     Descriptions:,
     // },
 ]

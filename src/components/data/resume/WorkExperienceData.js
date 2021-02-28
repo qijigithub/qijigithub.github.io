@@ -1,6 +1,6 @@
 export const WorkExperienceData =[
     {   
-        id:1,
+        id:'we1',
         Organization:'Nimbl Worldwide.inc, Chicago, IL',
         JobTitle: 'Development Analyst',
         DateRange:'August. 2019 - Now',
@@ -15,7 +15,7 @@ export const WorkExperienceData =[
         ],
     },
     {   
-        id:2,
+        id:'we2',
         Organization:'Geninvo.Inc, Bloomington/Nomal, IL',
         JobTitle:'Trainee Java Developer (Data Scientist)',
         DateRange:'July. 2019 - August.2019',

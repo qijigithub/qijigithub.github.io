@@ -22,6 +22,7 @@ const Sidebar = () => {
           <DetailSection>
             <DetailsH1>About Me</DetailsH1>
             <DetailsP>{SideBar.details}</DetailsP>
+            <Space/>
             <Button to= {SideBar.detailsLink} primary ='true'>Contact me</Button>
             <Space/>
             <Divider variant="middle" />
@@ -33,32 +34,21 @@ const Sidebar = () => {
   );
 };
 const SidebarNav = styled.div`
+display:inline-block;
   background: #f5f5f5;
-  width: 450px;
-  // padding: 10px;
+  width: 30%;
   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   position: fixed;
   margin-top: 60px;
-//   transition: 350ms;
-//   z-index: 2;
 
   @media screen and (max-width: 1200px) {
     width: 100%;
     height:100%;
     display: inline-block;
-    // letter-spacing: normal;
-    // word-spacing: normal;
-    // vertical-align: top;
-    // text-rendering: auto;
-    // z-index: 40; 
   }
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
-//   padding: 50px;
 
 `;
 

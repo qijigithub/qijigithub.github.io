@@ -41,7 +41,6 @@ export const ResumePage = () => {
 }
 
 const ResumeContainer = styled.div`
-// width:1000px;
 top:60px;
 display: flex;
 flex-direction: row;
@@ -54,25 +53,36 @@ background: #f5f5f5;
 const ResumeRWrapper = styled.div`
 padding: 2rem;
 margin-top:60px;
-// margin-left: 35%;
-min-width: calc(100% - 450px);
-// border: 1px solid black;
-background: #f5f5f5
+width: calc(100% - 30%);
+background: #f5f5f5;
+display: inline-block;
 @media screen and (max-width: 1200px){
     width: 100%;
     height:100%;
     display: inline-block;
 }
+@media screen and (max-width: 760px){
+    width: 100%;
+    height:100%;
+    display: inline-block;
+    padding:5px;
+}
 `
 const ResumePaper = styled.div`
-margin: 1rem;
+margin: 2rem 0rem;
 background: #fff;
 border: 1px solid #D8D8D8;
 padding: 2rem;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media screen and (max-width: 760px){
+    margin: 2rem 0rem;
+    padding: 2rem 0rem;
+    box-shadow: none;
+}
 `
 const Header1 = styled.h1`
 font-family: 'Alata', sans-serif;
+padding:1rem;
 `
 const Header2 = styled.ul`
 font-family: 'Alata', sans-serif;
