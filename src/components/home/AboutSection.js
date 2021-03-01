@@ -76,7 +76,7 @@ align-itmes:center;
 img {
     width:33vh;
     height:100%;
-    boject-fit:cover;
+    object-fit:cover;
 
     @media screen and(max-width:760px){
         width:90%;
