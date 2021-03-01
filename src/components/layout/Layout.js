@@ -23,7 +23,7 @@ export const Layout = () => {
                 <Switch>
                  <Route path= {buttonLinkData .Resume} component ={ResumePage}/>
                  <Route path= {buttonLinkData.Projects}  component ={ProjectsPage}/>
-                 <Route path= {buttonLinkData.Homes} component ={HomePage}/>
+                 <Route path= {buttonLinkData.Home} component ={HomePage}/>
                  <Route path= {buttonLinkData.About} component ={AboutPage}/>
                  <Route path= {buttonLinkData.Contact} component ={ContactPage}/>
                  <Route path= "/" exact component ={HomePage}/>
