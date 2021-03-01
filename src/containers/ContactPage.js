@@ -39,13 +39,13 @@ export const ContactPage = () => {
                 </IconText>
                 {/* <p>Connect with me: </p> */}
                 <SocialMedia>
-                    <IconCircle href='https://github.com/qijigithub'>
+                    <IconCircle href='https://github.com/qijigithub' className='faC'>
                             <FaGithubSquare/>
                         </IconCircle>
-                        <IconCircle href='#'>
+                        <IconCircle href='#' className='faC'>
                             <FaWhatsapp/>
                         </IconCircle>
-                        <IconCircle href='https://www.linkedin.com/in/ji-qi-profile/'>
+                        <IconCircle href='https://www.linkedin.com/in/ji-qi-profile/' className='faC'>
                             <FaLinkedin/>
                         </IconCircle>
                 </SocialMedia>
@@ -62,7 +62,7 @@ export const ContactPage = () => {
                 <TextField id="outlined-basic" label="Phone" variant="outlined" fullWidth/>
                 </InputContainer>
                 <InputContainer > 
-                <TextField id="outlined-basic" multiline rows={7} label="Message" name="message" variant="outlined" fullWidth/>
+                <TextField id="outlined-basic" multiline rows={7} label="Message" name="message" variant="outlined" fullWidth required/>
                 </InputContainer>
                 <InputContainer > 
                 <Button variant="outlined" color="primary" type="submit" value="Send">Send</Button>   
@@ -89,10 +89,18 @@ align-items:center;
 display:flex;
 height:40px;
 border-radius:50%;
+color: black;
+text-decoration: none;
 transition:0.3s all ease-in-out;
 &:hover{
     background:#e5e5e5;
+    text-decoration: none;
 }
+&:visited { text-decoration: none; }
+&:active {
+    color: green;
+    text-decoration: none;
+  }
 `
 
 const IconText = styled.div`
@@ -201,6 +209,11 @@ justify-content:center;
 align-items:center;
 margin-top:60px;
 min-height : 100vh;
+width: 80%;
+
+@media screen and (max-width:1000px){
+    width: 100%
+}
 `
 
 const ContainerBody = styled.div`
