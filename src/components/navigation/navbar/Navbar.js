@@ -48,6 +48,7 @@ padding:0 1rem;
 height:100%;
 cursor:pointer;
 text-decoration:none;
+font-family: 'Alfa Slab One', cursive;
 `
 const Logo = styled(Link)
 `

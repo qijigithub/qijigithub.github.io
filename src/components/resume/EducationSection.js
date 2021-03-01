@@ -16,7 +16,7 @@ const EducationSection = () => {
                     <DescContainer>
                     {
                         eduexp.Descriptions.map((desc,index)=>(
-                           <Description key={index}>{desc}</Description> 
+                           <Description key={`edu${index}`}>{desc}</Description> 
                         ))
                     }
                     </DescContainer>

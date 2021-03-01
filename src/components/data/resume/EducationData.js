@@ -1,5 +1,6 @@
 export const EducationData= [
-    {
+    {   
+        id:'ed1',
         Institution:'DePaul University, Chicago, IL',
         Link:'https://www.depaul.edu/Pages/default.aspx',
         Degree:'master of science, major in computer science',
@@ -7,7 +8,8 @@ export const EducationData= [
         Date:'Sep. 2016 -  Nov. 2018',
         Descriptions:['Graduated with Master of Computer Science degree with distinction honor.'],
     },
-    {
+    {   
+        id:'ed2',
         Institution:'ZheJiang University of Finance and Economics, Hangzhou, China',
         Link: 'https://english.zufe.edu.cn/',
         Degree:'bachelor of science, major in information and computing science/ bachelor of economics, major in finance',
@@ -16,6 +18,7 @@ export const EducationData= [
         Descriptions:[],
     },
     // {
+    //     id:,
     //     Institution:,
     //     Degree:,
     //     GPA:,

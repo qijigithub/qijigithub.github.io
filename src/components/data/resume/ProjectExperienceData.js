@@ -1,5 +1,6 @@
 export const ProjectExperienceData  = [
     {
+     id:'p1',
      title:'Natural language conversation program',
      Category:'Object Oriented Programming',
      DateRange:'Jan. 2018',    
@@ -14,6 +15,7 @@ export const ProjectExperienceData  = [
     },
 
     {
+        id:'p2',
         title: 'Weekly Profit Report Web Application',
         Category:'Web Application',
         DateRange:'Apr. 2019',    
@@ -27,6 +29,7 @@ export const ProjectExperienceData  = [
         ]
        },
        {
+        id:'p3',
         title:'Comparing performance of Machine Learning, Ensembles Method on Handwritten Digit Recognition',
         Category:'Machine Learning, Regression Coursework',
         DateRange:'Mar. 2018',    
@@ -39,6 +42,7 @@ export const ProjectExperienceData  = [
         ],   
        },
     //    {
+    //     id:,
     //     title:,
     //     Category:,
     //     DateRange:,    

@@ -65,6 +65,7 @@ const DropdownLink = styled(Link)`
     list-style:none;
     cursor:pointer;
     transition:0.2s ease-in-out;
+    font-family: 'Alfa Slab One', cursive;
 
     &:hover{
         color:#000d1a;

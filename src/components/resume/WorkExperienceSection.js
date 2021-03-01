@@ -15,7 +15,7 @@ const WorkExperienceSection = () => {
                     <DescContainer>
                     {
                         workexp.Descriptions.map((desc,index)=>(
-                           <Description key={index}>{desc}</Description> 
+                           <Description key={`work${index}`}>{desc}</Description> 
                         ))
                     }
                     </DescContainer>

@@ -15,7 +15,7 @@ const ProjectExperienceSection = () => {
                     <DescContainer>
                     {
                         pjexp.Descriptions.map((desc,index)=>(
-                           <Description key={index}>{desc}</Description> 
+                           <Description key={`pj${index}`}>{desc}</Description> 
                         ))
                     }
                     </DescContainer>
@@ -64,7 +64,7 @@ list-style-position: inside;
 `
 
 const Description = styled.li`
-font-family: 'Alata', sans-serif;
+// font-family: 'Alata', sans-serif;
 // font-family: 'Alfa Slab One', cursive;
 // font-family: 'Miriam Libre', sans-serif;
 // font-family: 'Roboto', sans-serif;
