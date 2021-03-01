@@ -39,7 +39,7 @@ padding: 4rem 0rem;
 const Container = styled.div`
 padding:3rem calc((100vw - 1300px) / 2);
 display:grid;
-grid-template-columns: 2fr 1fr;
+grid-template-columns: 2fr 1.5fr;
 grid-template-rows:500px;
 
 @media screen and (max-width: 760px){
@@ -64,7 +64,7 @@ p{
 }
 `
 const ColumnRight= styled.div`
-padding:1rem 2rem;
+padding:1rem 1rem;
 order:${({reverse})=>(reverse?'1':'2')};
 display:flex;
 justify-content:center;
