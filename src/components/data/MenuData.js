@@ -3,6 +3,7 @@ export const menuData = [
     {title: 'Home', link:'/home'},
     {title: 'Projects', link:'/projects'},
     {title: 'Resume', link:'/resume'},
+    {title: 'Notebook', link:'/qijigitbook'},
     // {title: 'Contact me', link:'/contact'},
 ]
 
@@ -11,5 +12,6 @@ export const buttonLinkData = {
     Home: '/home',
     Projects: '/projects',
     Resume: '/resume',
-    Contact:'/contact'
+    Contact:'/contact',
+    NoteBook:'/qijigitbook',
 }
