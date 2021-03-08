@@ -14,7 +14,7 @@ export const ProjectSection = ({projects}) => {
                          <ProjectIcon src={project.Icon}/>
                          <ProjectH2>{project.projectCatagory}</ProjectH2>
                      <ProjectP>{project.projectDetail}</ProjectP>
-                     <Button to = "/project" primary = 'true'> Learn more</Button> 
+                     <Button to = {project.link} primary = 'true'> Learn more</Button> 
                      </ProjectCard> 
                     )
                 })
