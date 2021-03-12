@@ -18,25 +18,30 @@ export const AboutData = {
     buttonLabel:'View Resume',
     reverse:false,
     delay:100,
+    
+    'Web Development': ['JavaScript', 'NodeJS', 'HTML', 'CSS' ,'Jade', 'ReactJS', 'ExpressJS', 'RestfulAPI'],
+    'Data Science':['Statistics,','Machine Learning','Python','Numpy','Pandas','ScikitLearn','MATLAB', 'R', 'SPSS', 'SAS', 'Jupyter'],
+   
+    likeGrid:['Running', 'Tennis', 'Reading', 'Basketball'],
     timeline: [
         {
             id:'time5',
             title: 'Work',
-            description: 'I worked in Nimbl WorldWide Inc. from 2019 to now. I\'ve been work as a Development Anylst for 2 years. ',
+            description: 'I worked in Nimbl WorldWide Inc. from 2019 to now. I\'ve been worked as a Development Anaylst for 2 years. ',
             dotColor:'primary',  //'grey'| 'inherit'| 'primary'| 'secondary'
             icon:companyIcon,      
         },
         {
             id:'time4',
             title: 'Master',
-            description: '2018, I graduated from DePaul University with a master degree, majoring in computer science.',
+            description: '2018, I graduated from DePaul University with a master degree, majoring in computer science. During my study, I was focused on gaining hands - on experience in the area of data science, machine learning algorithm study.',
             dotColor:'inhert',  //'grey'| 'inherit'| 'primary'| 'secondary'
             icon:masterIcon,      
         },
         {
             id:'time3',
             title: 'College',
-            description: 'From 2010 - 2014, I studied at ZheJiang University of Finance & Economics. I was pursuing double major. I got bachelor of science, major in information and computing science and bachelor of economics, major in finance.',
+            description: 'From 2010 - 2014, I studied at ZheJiang University of Finance & Economics. I was pursuing double majors. I got bachelor of science, major in information and computing science and bachelor of economics, major in finance.',
             dotColor:'primary',  //'grey'| 'inherit'| 'primary'| 'secondary'
             icon:collegeIcon,      
         },

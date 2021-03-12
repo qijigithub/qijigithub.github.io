@@ -1,25 +1,36 @@
 import React from 'react'
 import styled from 'styled-components';
-import {FaPhoneAlt} from 'react-icons/fa';
-import {FaEnvelope} from 'react-icons/fa';
-import {FaSkype} from 'react-icons/fa';
 import {HiOutlineExternalLink} from 'react-icons/hi';
 import {FaGithubSquare} from 'react-icons/fa';
-import {FaLinkedin} from 'react-icons/fa';
-import {Button} from '../button/Button';
+import Chip from '@material-ui/core/Chip';
+import Rating from '@material-ui/lab/Rating';
+import Box from '@material-ui/core/Box';
 
-import {FaWhatsapp} from 'react-icons/fa';
+
 
 const MCard = (props) => {
     const {project} = props;
-
     return (
    <ProjectWrapper >
        <ProjectScreen>
        <img src= {project.screenImg} alt={"projectimg"}/>
            </ProjectScreen>
        <ProjectDescription>
-        <h4>{project.title}</h4>
+        <TitleBar>{project.title}
+        <Box component="fieldset"  borderColor="transparent">
+         <Rating name="read-only" value={project.level} readOnly size="small" />
+      </Box>
+        </TitleBar>
+        <p>
+            Keywords : 
+        {
+            project.keywords.map((keyword,idx)=>(
+                <Chip  key={idx} style={{margin: '2px'}} label={keyword}/>
+            ))
+        }
+          </p>
+          <p>
+        </p>
        <p>{project.description}</p>
        <SocialMedia>
        {/* <Button to= {project.explainationLink} primary ='true'>{'Learn more'}</Button> */}
@@ -46,6 +57,7 @@ const MCard = (props) => {
 // display: inline-block;
 // padding:1rem;
 // `
+
 
 const IconCircle = styled.a`
 flex:0 1 40px;
@@ -104,6 +116,17 @@ img{
 }
 `
 
+const TitleBar = styled.div`
+font-family: 'Alata', sans-serif;
+font-size:2rem;
+font-weight:500;
+padding: 0.5rem;
+// margin-bottom:0.5rem;
+// color:grey;
+display:flex;
+justify-content: space-between;
+`
+
 const ProjectDescription = styled.div`
 background:white;
 position:relative;
@@ -120,6 +143,7 @@ h4{
     // color:grey;
 }
 p{
+    // display:flex;
     font-weight:200;
     font-size:1.20em;
     padding: 0.5rem;

@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import TimeLineUnit from '../components/UI/card/TimeLineUnit'
 import {AboutData} from '../components/data/AboutData';
+import MatrixRain from '../components/about/MatrixRain';
+import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,37 +31,89 @@ export const AboutPage = () => {
 
     return (
         <AboutContainer >
+        {/* <MatrixRain/> */}
             <AboutWrapper>
             <AboutH1>{AboutData.title}</AboutH1>
-        <Timeline align="alternate">
-      {AboutData.timeline.map((timeline)=>(
-      <TimeLineUnit timeline={timeline}/> 
+
+    <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item >
+          <Paper className={classes.paper} xs={12}>
+          <Timeline align="alternate">
+      {AboutData.timeline.map((timeline, idx)=>(
+      <TimeLineUnit key ={idx} timeline={timeline}/> 
         ))}
     </Timeline>
+          </Paper>
+        </Grid>
+        {/* <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>
+          I Like: 
+              {
+                  AboutData.likeGrid.map(like=>(
+                    <li>
+                        {like}
+                    </li>
+                  ))
+              }
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+              {
+                  AboutData['Web Development'].map((skill,idx)=>{
+                    <p key= {idx}>
+                    {skill}
+                </p>
+                  })
+              }
+              </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>
 
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+        </Grid>
 
-    {/* <div className={classes.root}>
+        <Grid item >
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        </Grid> */}
+      </Grid>
+    </div>
+
+{/* 
+    <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={classes.paper2}>xs=12</Paper>
+          <Paper className={classes.paper}>xs=12</Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper2}>xs=12 sm=6</Paper>
+          <Paper className={classes.paper}>
+              xs=12 sm=6</Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper2}>xs=12 sm=6</Paper>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper2}>xs=6 sm=3</Paper>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper2}>xs=6 sm=3</Paper>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper2}>xs=6 sm=3</Paper>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper2}>xs=6 sm=3</Paper>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
         </Grid>
       </Grid>
     </div> */}
@@ -71,15 +125,16 @@ export const AboutPage = () => {
 }
 
 const AboutContainer = styled.div`
-top:60px;
+// top:60px;
 display: flex;
 width: 100%;
 height:100vh;
 flex-direction: row;
 flex-wrap: wrap;
-background: #f5f5f5;
+// background: #000;
 @media screen and (max-width:1200px) {
     flex-direction: column;
+}
 `
 
 const AboutWrapper = styled.div`
@@ -87,16 +142,16 @@ padding: 2rem;
 margin-top:60px;
 width: 100%;
 background: #f5f5f5;
-display: inline-block;
+// display: inline-block;
 @media screen and (max-width: 1200px){
     width: 100%;
     height:100%;
-    display: inline-block;
+    // display: inline-block;
 }
 @media screen and (max-width: 760px){
     width: 100%;
     height:100%;
-    display: inline-block;
+    // display: inline-block;
     padding:5px;
 }
 `
