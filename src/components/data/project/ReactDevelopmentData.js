@@ -5,8 +5,8 @@ export const ReactDevelopmentData = [
         title: 'Drawing Canvans',
         keywords: ['React','NodeJS', 'Javscript'],
         level: 2,
-        description: 'It is a drawing canvas. Basically I make this for releaseing pressure, but you can be creative. \
-        If you want to explain something with somebody, you could use this link too. The canvas will not be saved, everything will disappear after refreshing',
+        description: 'This is a drawing canvas with a simple, approachable interface that also allows you to be creative.\
+        From illustrating concepts to drawing a silly picture, this whiteboard app makes sharing ideas easy and fun. The canvas is not saved and everything disappears after refreshing',
         projectLink:'https://qijigithub.github.io/drawingcanvas/',
         githubLink:'https://github.com/qijigithub/drawingcanvas',
         explainationLink:'/story',
